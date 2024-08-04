@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{user_email}-{certificate_name}",
+ "creation": "2024-08-03 17:22:53.591093",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_info_section",
+  "user_email",
+  "column_break_rxoa",
+  "full_name",
+  "section_break_pymt",
+  "certificate_type",
+  "certificate_name",
+  "certificate_number",
+  "column_break_rscc",
+  "issue_date",
+  "expiration_date",
+  "in_renewal_process"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_email",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Email",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "user_email.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "column_break_rxoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pymt",
+   "fieldtype": "Section Break",
+   "label": "Certificate Info"
+  },
+  {
+   "fieldname": "certificate_type",
+   "fieldtype": "Link",
+   "label": "Certificate Type",
+   "options": "Certificate Type",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "certificate_number",
+   "fieldtype": "Data",
+   "label": "Certificate Number"
+  },
+  {
+   "fieldname": "column_break_rscc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate_name",
+   "fieldtype": "Link",
+   "label": "Certificate Name",
+   "options": "Certificate Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staff_info_section",
+   "fieldtype": "Section Break",
+   "label": "Staff Info"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "Expiration Date",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "in_renewal_process",
+   "fieldtype": "Check",
+   "label": "In Renewal Process?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-03 17:37:40.521095",
+ "modified_by": "Administrator",
+ "module": "Iqs App",
+ "name": "Staff Certification",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

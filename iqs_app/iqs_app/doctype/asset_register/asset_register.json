@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-08-04 11:58:02.314289",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "asset_information_section",
+  "asset_name",
+  "details",
+  "serial_number",
+  "identification_number",
+  "column_break_flbb",
+  "year_of_manufacturing",
+  "location",
+  "placement_or_issued_to",
+  "asset_image",
+  "section_break_smje",
+  "last_clibration",
+  "valid_until_there_is_potential_damage",
+  "validity",
+  "maintenance_responsible_person",
+  "column_break_oorz",
+  "acceptance_criteria"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asset Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "last_clibration",
+   "fieldtype": "Date",
+   "label": "Last Clibration"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Data",
+   "label": "Details"
+  },
+  {
+   "fieldname": "identification_number",
+   "fieldtype": "Data",
+   "label": "Identification Number"
+  },
+  {
+   "depends_on": "eval: doc.valid_until_there_is_potential_damage === 0",
+   "fieldname": "validity",
+   "fieldtype": "Date",
+   "label": "Validity",
+   "mandatory_depends_on": "eval: doc.valid_until_there_is_potential_damage === 0"
+  },
+  {
+   "fieldname": "year_of_manufacturing",
+   "fieldtype": "Data",
+   "label": "Year Of Manufacturing"
+  },
+  {
+   "fieldname": "column_break_flbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "At Kothrud Office",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "section_break_smje",
+   "fieldtype": "Section Break",
+   "label": "Calibration Details"
+  },
+  {
+   "fieldname": "column_break_oorz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maintenance_responsible_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Maintenance Responsible Person",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "valid_until_there_is_potential_damage",
+   "fieldtype": "Check",
+   "label": "Valid Until there is potential damage"
+  },
+  {
+   "fieldname": "placement_or_issued_to",
+   "fieldtype": "Link",
+   "label": "Placement or Issued to",
+   "options": "User"
+  },
+  {
+   "fieldname": "acceptance_criteria",
+   "fieldtype": "Small Text",
+   "label": "Acceptance Criteria"
+  },
+  {
+   "fieldname": "asset_information_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Information"
+  },
+  {
+   "fieldname": "asset_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Asset Image"
+  }
+ ],
+ "image_field": "asset_image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Maintenance Log",
+   "link_doctype": "Asset Maintenance Log",
+   "link_fieldname": "asset_link"
+  }
+ ],
+ "modified": "2024-08-04 12:52:11.161212",
+ "modified_by": "Administrator",
+ "module": "Iqs App",
+ "name": "Asset Register",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

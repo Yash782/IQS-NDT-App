@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "autoname": "format:{asset_link}-CAL-MM-YY",
+ "creation": "2024-08-04 12:31:26.926598",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_smje",
+  "calibration_date",
+  "valid_until_there_is_potential_damage",
+  "new_validity",
+  "calibration_done_by",
+  "column_break_oorz",
+  "acceptance_criteria",
+  "acceptance_criteria_met",
+  "remark",
+  "asset_information_section",
+  "asset_name",
+  "details",
+  "serial_number",
+  "identification_number",
+  "column_break_flbb",
+  "year_of_manufacturing",
+  "location",
+  "asset_image",
+  "asset_link",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_information_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Information"
+  },
+  {
+   "fetch_from": "asset_link.asset_name",
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asset Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "asset_link.details",
+   "fieldname": "details",
+   "fieldtype": "Data",
+   "label": "Details"
+  },
+  {
+   "fetch_from": "asset_link.serial_number",
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fetch_from": "asset_link.identification_number",
+   "fieldname": "identification_number",
+   "fieldtype": "Data",
+   "label": "Identification Number"
+  },
+  {
+   "fieldname": "column_break_flbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "asset_link.year_of_manufacturing",
+   "fieldname": "year_of_manufacturing",
+   "fieldtype": "Data",
+   "label": "Year Of Manufacturing"
+  },
+  {
+   "default": "At Kothrud Office",
+   "fetch_from": "asset_link.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fetch_from": "asset_link.asset_image",
+   "fieldname": "asset_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Asset Image"
+  },
+  {
+   "fieldname": "section_break_smje",
+   "fieldtype": "Section Break",
+   "label": "Calibration Log Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "valid_until_there_is_potential_damage",
+   "fieldtype": "Check",
+   "label": "Valid Until there is potential damage"
+  },
+  {
+   "fieldname": "column_break_oorz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "asset_link.acceptance_criteria",
+   "fieldname": "acceptance_criteria",
+   "fieldtype": "Small Text",
+   "label": "Acceptance Criteria"
+  },
+  {
+   "default": "Today",
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date"
+  },
+  {
+   "depends_on": "eval: doc.valid_until_there_is_potential_damage === 0",
+   "fieldname": "new_validity",
+   "fieldtype": "Date",
+   "label": "New Validity",
+   "mandatory_depends_on": "eval: doc.valid_until_there_is_potential_damage === 0"
+  },
+  {
+   "fieldname": "calibration_done_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Calibration Done by",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "acceptance_criteria_met",
+   "fieldtype": "Check",
+   "label": "Acceptance Criteria Met?"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "asset_link",
+   "fieldtype": "Link",
+   "label": "Asset Link",
+   "options": "Asset Register",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Asset Maintenance Log",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "image_field": "asset_image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-04 13:44:28.120872",
+ "modified_by": "Administrator",
+ "module": "Iqs App",
+ "name": "Asset Maintenance Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "identification_number",
+ "track_changes": 1
+}
