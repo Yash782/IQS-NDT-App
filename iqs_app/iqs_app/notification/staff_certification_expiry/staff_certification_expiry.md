@@ -1,0 +1,1 @@
+Your certification of {{certificate_name}} is going to expire 1 day. Please renew ASAP.
