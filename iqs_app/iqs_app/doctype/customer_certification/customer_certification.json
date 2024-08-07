@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-06 12:01:51.539211",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "organization_candidate_email",
+  "qpl_no",
+  "column_break_iqen",
+  "certificate_number",
+  "certificate_date",
+  "customer_logo",
+  "section_break_dclp",
+  "date_of_initial",
+  "date_of_recertification",
+  "column_break_mrwt",
+  "date_of_initial_assignment",
+  "date_of_expiry",
+  "section_break_risq",
+  "1st_technical_performance_evaluation_column",
+  "first_due_on",
+  "first_done_on",
+  "2nd_technical_evaluation_column",
+  "second_due_on",
+  "second_done_on",
+  "section_break_ykxz",
+  "vision_test_valid_till"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "organization_candidate_email",
+   "fieldtype": "Data",
+   "label": "Organization/ Candidate Email"
+  },
+  {
+   "fieldname": "certificate_number",
+   "fieldtype": "Data",
+   "label": "Certificate Number"
+  },
+  {
+   "fieldname": "certificate_date",
+   "fieldtype": "Date",
+   "label": "Certificate Date"
+  },
+  {
+   "fieldname": "section_break_dclp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_initial",
+   "fieldtype": "Date",
+   "label": "Date of Initial"
+  },
+  {
+   "fieldname": "date_of_recertification",
+   "fieldtype": "Date",
+   "label": "Date of Recertification"
+  },
+  {
+   "fieldname": "date_of_initial_assignment",
+   "fieldtype": "Date",
+   "label": "Date of Initial Assignment"
+  },
+  {
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "column_break_iqen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mrwt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_risq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "1st_technical_performance_evaluation_column",
+   "fieldtype": "Column Break",
+   "label": "1st Technical Performance Evaluation"
+  },
+  {
+   "fieldname": "first_due_on",
+   "fieldtype": "Date",
+   "label": "Due On"
+  },
+  {
+   "fieldname": "first_done_on",
+   "fieldtype": "Date",
+   "label": "Done On"
+  },
+  {
+   "fieldname": "2nd_technical_evaluation_column",
+   "fieldtype": "Column Break",
+   "label": "2nd Technical Evaluation"
+  },
+  {
+   "fieldname": "second_due_on",
+   "fieldtype": "Date",
+   "label": "Due On"
+  },
+  {
+   "fieldname": "second_done_on",
+   "fieldtype": "Date",
+   "label": "Done On"
+  },
+  {
+   "fieldname": "section_break_ykxz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vision_test_valid_till",
+   "fieldtype": "Date",
+   "label": "Vision Test Valid Till"
+  },
+  {
+   "fieldname": "qpl_no",
+   "fieldtype": "Data",
+   "label": "QPL No"
+  },
+  {
+   "fieldname": "customer_logo",
+   "fieldtype": "Attach Image",
+   "label": "Customer Logo"
+  }
+ ],
+ "image_field": "customer_logo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 10:34:37.880541",
+ "modified_by": "Administrator",
+ "module": "Iqs App",
+ "name": "Customer Certification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

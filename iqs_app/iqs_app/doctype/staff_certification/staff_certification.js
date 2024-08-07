@@ -6,7 +6,6 @@
 
 // 	},
 // });
-
 frappe.ui.form.on('Staff Certification', {
     refresh: function (frm) {
         // Add the custom button to the form
