@@ -1,16 +1,21 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:qpl_no",
  "creation": "2024-08-06 12:01:51.539211",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "organization_candidate_email",
+  "organization",
+  "candidate_name",
   "qpl_no",
-  "column_break_iqen",
   "certificate_number",
+  "level_of_qualification",
+  "column_break_iqen",
+  "organization_candidate_email",
   "certificate_date",
+  "written_practical_number",
+  "certificate_attachment",
   "customer_logo",
   "section_break_dclp",
   "date_of_initial",
@@ -25,24 +30,34 @@
   "2nd_technical_evaluation_column",
   "second_due_on",
   "second_done_on",
+  "section_break_hyfa",
+  "3rd_technical_performance_evaluation_column",
+  "3rd_due_on",
+  "3rd_done_on",
+  "4th_technical_performance_evaluation_column",
+  "4th_due_on",
+  "4th_done_on",
   "section_break_ykxz",
-  "vision_test_valid_till"
+  "date_of_vision_test",
+  "remarks",
+  "column_break_yngj",
+  "vision_test_valid_till",
+  "section_break_djcq",
+  "notes"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
-  },
-  {
    "fieldname": "organization_candidate_email",
    "fieldtype": "Data",
-   "label": "Organization/ Candidate Email"
+   "label": "Organization/Candidate Email",
+   "reqd": 1
   },
   {
    "fieldname": "certificate_number",
    "fieldtype": "Data",
-   "label": "Certificate Number"
+   "in_list_view": 1,
+   "label": "Certificate Number",
+   "reqd": 1
   },
   {
    "fieldname": "certificate_date",
@@ -83,7 +98,8 @@
   },
   {
    "fieldname": "section_break_risq",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Technical Evaluations"
   },
   {
    "fieldname": "1st_technical_performance_evaluation_column",
@@ -127,21 +143,111 @@
   {
    "fieldname": "qpl_no",
    "fieldtype": "Data",
-   "label": "QPL No"
+   "label": "QPL No",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "customer_logo",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Customer Logo"
+  },
+  {
+   "fieldname": "section_break_djcq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "certificate_attachment",
+   "fieldtype": "Attach",
+   "label": "Certificate Attachment"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_hyfa",
+   "fieldtype": "Section Break",
+   "label": "3rd And 4th Evaluation"
+  },
+  {
+   "fieldname": "3rd_technical_performance_evaluation_column",
+   "fieldtype": "Column Break",
+   "label": "3rd Technical Performance Evaluation"
+  },
+  {
+   "fieldname": "3rd_due_on",
+   "fieldtype": "Date",
+   "label": "Due On"
+  },
+  {
+   "fieldname": "3rd_done_on",
+   "fieldtype": "Date",
+   "label": "Done On"
+  },
+  {
+   "fieldname": "4th_technical_performance_evaluation_column",
+   "fieldtype": "Column Break",
+   "label": "4th Technical Performance Evaluation"
+  },
+  {
+   "fieldname": "4th_due_on",
+   "fieldtype": "Date",
+   "label": "Due On"
+  },
+  {
+   "fieldname": "4th_done_on",
+   "fieldtype": "Date",
+   "label": "Done On"
+  },
+  {
+   "fieldname": "date_of_vision_test",
+   "fieldtype": "Date",
+   "label": "Date of Vision Test"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_yngj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Customer Organization"
+  },
+  {
+   "fieldname": "written_practical_number",
+   "fieldtype": "Data",
+   "label": "Written Practical Number"
+  },
+  {
+   "fieldname": "level_of_qualification",
+   "fieldtype": "Data",
+   "label": "Level Of Qualification"
+  },
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "label": "Candidate Name",
+   "reqd": 1
   }
  ],
  "image_field": "customer_logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-07 10:34:37.880541",
+ "modified": "2024-08-13 12:12:51.784589",
  "modified_by": "Administrator",
  "module": "Iqs App",
- "name": "Customer Certification",
+ "name": "Qualified Personal List",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

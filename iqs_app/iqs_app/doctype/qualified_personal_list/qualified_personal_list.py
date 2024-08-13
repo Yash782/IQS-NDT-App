@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class CustomerCertification(Document):
+class QualifiedPersonalList(Document):
 	pass
