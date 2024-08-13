@@ -5,18 +5,24 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "test_field"
+  "test_field",
+  "test_field_2"
  ],
  "fields": [
   {
    "fieldname": "test_field",
    "fieldtype": "Data",
    "label": "Test field"
+  },
+  {
+   "fieldname": "test_field_2",
+   "fieldtype": "Data",
+   "label": "Test Field 2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-13 14:25:18.999800",
+ "modified": "2024-08-13 14:50:54.723063",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "Test Doctype",
