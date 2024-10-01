@@ -231,7 +231,7 @@
   {
    "fieldname": "level_of_qualification",
    "fieldtype": "Data",
-   "label": "Level Of Qualification"
+   "label": "Method of NDE\u00a0and\u00a0Level"
   },
   {
    "fieldname": "candidate_name",
@@ -243,7 +243,7 @@
  "image_field": "customer_logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-13 12:12:51.784589",
+ "modified": "2024-10-01 10:59:37.957529",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "Qualified Personal List",

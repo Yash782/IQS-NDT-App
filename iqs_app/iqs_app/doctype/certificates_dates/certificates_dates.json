@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-01 10:49:43.674782",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "certificate_date",
+  "due_date",
+  "initial",
+  "renewal",
+  "retest_exam",
+  "pdh_training"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "certificate_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Certificate Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "initial",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Initial"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "renewal",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Renewal"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "retest_exam",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Retest Exam"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "pdh_training",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "PDH Training"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-01 10:59:07.012773",
+ "modified_by": "Administrator",
+ "module": "Iqs App",
+ "name": "Certificates Dates",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
