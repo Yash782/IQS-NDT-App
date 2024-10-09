@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company_name",
+ "creation": "2024-10-09 15:52:00.398355",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "section_break_zcjm",
+  "table_jbxl",
+  "section_break_ikgg",
+  "nde_subcontractor_assignment_date",
+  "table_xqga",
+  "nde_level_iii_section",
+  "name_of_assigned_level_iii",
+  "date_of_engagement",
+  "column_break_qwru",
+  "date_of_expiry",
+  "attachment",
+  "date_of_vision_test_section",
+  "valid_till",
+  "column_break_tqjv",
+  "written_practical_no",
+  "section_break_uprt",
+  "additional_remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "label": "Company Name",
+   "options": "Customer Organization",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_ikgg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nde_subcontractor_assignment_date",
+   "fieldtype": "Date",
+   "label": "NDE Subcontractor Assignment Date"
+  },
+  {
+   "fieldname": "nde_level_iii_section",
+   "fieldtype": "Section Break",
+   "label": "NDE LEVEL III"
+  },
+  {
+   "fieldname": "name_of_assigned_level_iii",
+   "fieldtype": "Data",
+   "label": "Name of Assigned Level III"
+  },
+  {
+   "fieldname": "date_of_engagement",
+   "fieldtype": "Date",
+   "label": "Date of Engagement"
+  },
+  {
+   "fieldname": "column_break_qwru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "date_of_vision_test_section",
+   "fieldtype": "Section Break",
+   "label": "Date of Vision Test"
+  },
+  {
+   "fieldname": "valid_till",
+   "fieldtype": "Date",
+   "label": "Valid Till"
+  },
+  {
+   "fieldname": "column_break_tqjv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "written_practical_no",
+   "fieldtype": "Data",
+   "label": "Written Practical No"
+  },
+  {
+   "fieldname": "section_break_uprt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_remark",
+   "fieldtype": "Text Editor",
+   "label": "Additional Remark"
+  },
+  {
+   "fieldname": "table_xqga",
+   "fieldtype": "Table",
+   "options": "Calibration Recorded"
+  },
+  {
+   "fieldname": "section_break_zcjm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_jbxl",
+   "fieldtype": "Table",
+   "options": "NDE Procedure Child Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-09 16:20:13.165390",
+ "modified_by": "Administrator",
+ "module": "Iqs App",
+ "name": "NDT Records for ASME Company",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company_name"
+}

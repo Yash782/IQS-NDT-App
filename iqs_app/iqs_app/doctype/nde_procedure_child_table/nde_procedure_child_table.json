@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-09 16:08:00.753136",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "number",
+  "revision",
+  "demonstration_report_no",
+  "date_of_demonstration"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Number"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Revision"
+  },
+  {
+   "fieldname": "demonstration_report_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Demonstration Report No"
+  },
+  {
+   "fieldname": "date_of_demonstration",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Demonstration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-09 16:14:30.386994",
+ "modified_by": "Administrator",
+ "module": "Iqs App",
+ "name": "NDE Procedure Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
