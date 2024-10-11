@@ -1,16 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:qpl_no",
+ "autoname": "format:{candidate_name}-{subject}",
  "creation": "2024-09-30 17:08:31.919828",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "organization",
   "candidate_name",
-  "qpl_no",
   "certificate_number",
-  "level_of_qualification",
+  "subject",
   "column_break_iqen",
   "organization_candidate_email",
   "certificate_date",
@@ -21,21 +20,16 @@
   "date_of_initial",
   "column_break_mrwt",
   "date_of_expiry",
-  "section_break_risq",
-  "1st_technical_performance_evaluation_column",
-  "first_due_on",
-  "first_done_on",
-  "2nd_technical_evaluation_column",
-  "second_due_on",
-  "second_done_on",
   "section_break_fgdk",
   "renewal_dates",
   "notification_date",
-  "section_break_ykxz",
-  "date_of_vision_test",
-  "remarks",
-  "column_break_yngj",
-  "vision_test_valid_till",
+  "section_break_qkfu",
+  "experience_certificate",
+  "vision_certificate",
+  "original_certificate",
+  "column_break_wbdm",
+  "inspection_report",
+  "written_practice",
   "section_break_djcq",
   "notes"
  ],
@@ -53,23 +47,11 @@
    "reqd": 1
   },
   {
-   "fieldname": "qpl_no",
-   "fieldtype": "Data",
-   "label": "QPL No",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
    "fieldname": "certificate_number",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Certificate Number",
    "reqd": 1
-  },
-  {
-   "fieldname": "level_of_qualification",
-   "fieldtype": "Data",
-   "label": "Method of NDE\u00a0and\u00a0Level"
   },
   {
    "fieldname": "column_break_iqen",
@@ -121,64 +103,6 @@
    "label": "Date of Expiry"
   },
   {
-   "fieldname": "section_break_risq",
-   "fieldtype": "Section Break",
-   "label": "Technical Evaluations"
-  },
-  {
-   "fieldname": "1st_technical_performance_evaluation_column",
-   "fieldtype": "Column Break",
-   "label": "1st Technical Performance Evaluation"
-  },
-  {
-   "fieldname": "first_due_on",
-   "fieldtype": "Date",
-   "label": "Due On"
-  },
-  {
-   "fieldname": "first_done_on",
-   "fieldtype": "Date",
-   "label": "Done On"
-  },
-  {
-   "fieldname": "2nd_technical_evaluation_column",
-   "fieldtype": "Column Break",
-   "label": "2nd Technical Evaluation"
-  },
-  {
-   "fieldname": "second_due_on",
-   "fieldtype": "Date",
-   "label": "Due On"
-  },
-  {
-   "fieldname": "second_done_on",
-   "fieldtype": "Date",
-   "label": "Done On"
-  },
-  {
-   "fieldname": "section_break_ykxz",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "date_of_vision_test",
-   "fieldtype": "Date",
-   "label": "Date of Vision Test"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Data",
-   "label": "Remarks"
-  },
-  {
-   "fieldname": "column_break_yngj",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "vision_test_valid_till",
-   "fieldtype": "Date",
-   "label": "Vision Test Valid Till"
-  },
-  {
    "fieldname": "section_break_djcq",
    "fieldtype": "Section Break"
   },
@@ -189,7 +113,8 @@
   },
   {
    "fieldname": "section_break_fgdk",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Renewal Dates"
   },
   {
    "fieldname": "renewal_dates",
@@ -202,16 +127,61 @@
    "fieldtype": "Date",
    "label": "Notification Date",
    "reqd": 1
+  },
+  {
+   "description": "NDE\u00a0and\u00a0Welding Level",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "section_break_qkfu",
+   "fieldtype": "Section Break",
+   "label": "Additional Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "experience_certificate",
+   "fieldtype": "Check",
+   "label": "Experience Certificate"
+  },
+  {
+   "default": "0",
+   "fieldname": "vision_certificate",
+   "fieldtype": "Check",
+   "label": "Vision Certificate"
+  },
+  {
+   "default": "0",
+   "fieldname": "original_certificate",
+   "fieldtype": "Check",
+   "label": "Original Certificate"
+  },
+  {
+   "fieldname": "column_break_wbdm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "inspection_report",
+   "fieldtype": "Check",
+   "label": "Inspection Report"
+  },
+  {
+   "default": "0",
+   "fieldname": "written_practice",
+   "fieldtype": "Check",
+   "label": "Written Practice"
   }
  ],
  "image_field": "customer_logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-01 11:00:44.978692",
+ "modified": "2024-10-11 15:22:26.719831",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "Certification Renewal",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
