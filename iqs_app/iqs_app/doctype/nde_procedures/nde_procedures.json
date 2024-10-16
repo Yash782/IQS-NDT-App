@@ -7,7 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "method",
-  "date_of_assignments"
+  "date_of_assignment"
  ],
  "fields": [
   {
@@ -17,16 +17,16 @@
    "label": "Method"
   },
   {
-   "fieldname": "date_of_assignments",
+   "fieldname": "date_of_assignment",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Date Of Assignments"
+   "label": "Date Of Assignment"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-10-11 15:28:27.110346",
+ "modified": "2024-10-16 16:02:02.603847",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "NDE Procedures",
