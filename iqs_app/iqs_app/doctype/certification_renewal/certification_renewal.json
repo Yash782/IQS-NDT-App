@@ -71,7 +71,7 @@
   {
    "fieldname": "written_practical_number",
    "fieldtype": "Data",
-   "label": "Written Practical Number"
+   "label": "Written Practice Number"
   },
   {
    "fieldname": "certificate_attachment",
@@ -177,7 +177,7 @@
  "image_field": "customer_logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-11 15:22:26.719831",
+ "modified": "2024-10-16 16:58:55.973273",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "Certification Renewal",

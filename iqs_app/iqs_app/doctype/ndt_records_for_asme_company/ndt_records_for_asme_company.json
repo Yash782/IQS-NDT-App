@@ -88,7 +88,7 @@
   {
    "fieldname": "written_practical_no",
    "fieldtype": "Data",
-   "label": "Written Practical No"
+   "label": "Written Practice No"
   },
   {
    "fieldname": "section_break_uprt",
@@ -116,7 +116,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-09 16:20:13.165390",
+ "modified": "2024-10-16 16:58:35.541888",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "NDT Records for ASME Company",
