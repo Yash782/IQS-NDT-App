@@ -12,12 +12,12 @@
   "subject",
   "column_break_iqen",
   "organization_candidate_email",
-  "certificate_date",
+  "certificate_issue_date",
   "written_practical_number",
   "certificate_attachment",
   "customer_logo",
   "section_break_dclp",
-  "date_of_initial",
+  "issue_date",
   "column_break_mrwt",
   "date_of_expiry",
   "section_break_fgdk",
@@ -64,11 +64,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "certificate_date",
-   "fieldtype": "Date",
-   "label": "Certificate Date"
-  },
-  {
    "fieldname": "written_practical_number",
    "fieldtype": "Data",
    "label": "Written Practice Number"
@@ -87,11 +82,6 @@
   {
    "fieldname": "section_break_dclp",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "date_of_initial",
-   "fieldtype": "Date",
-   "label": "Date of Initial"
   },
   {
    "fieldname": "column_break_mrwt",
@@ -172,12 +162,22 @@
    "fieldname": "written_practice",
    "fieldtype": "Check",
    "label": "Written Practice"
+  },
+  {
+   "fieldname": "certificate_issue_date",
+   "fieldtype": "Date",
+   "label": "Certificate Issue Date"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
   }
  ],
  "image_field": "customer_logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-16 16:58:55.973273",
+ "modified": "2024-10-17 15:50:24.153781",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "Certification Renewal",
