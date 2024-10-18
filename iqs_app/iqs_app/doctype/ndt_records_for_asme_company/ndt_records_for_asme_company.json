@@ -10,7 +10,7 @@
   "section_break_zcjm",
   "table_jbxl",
   "section_break_ikgg",
-  "nde_subcontractor_assignment_date",
+  "table_yqnf",
   "table_xqga",
   "nde_level_iii_section",
   "name_of_assigned_level_iii",
@@ -35,12 +35,8 @@
   },
   {
    "fieldname": "section_break_ikgg",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "nde_subcontractor_assignment_date",
-   "fieldtype": "Date",
-   "label": "NDE Subcontractor Assignment Date"
+   "fieldtype": "Section Break",
+   "label": "NDE Subcontractor Assignment"
   },
   {
    "fieldname": "nde_level_iii_section",
@@ -112,11 +108,16 @@
    "fieldname": "table_jbxl",
    "fieldtype": "Table",
    "options": "NDE Procedure Child Table"
+  },
+  {
+   "fieldname": "table_yqnf",
+   "fieldtype": "Table",
+   "options": "NDE Subcontractor Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-16 16:58:35.541888",
+ "modified": "2024-10-18 14:39:21.676263",
  "modified_by": "Administrator",
  "module": "Iqs App",
  "name": "NDT Records for ASME Company",
